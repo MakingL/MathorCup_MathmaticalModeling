@@ -26,7 +26,7 @@ class Route(object):
         self.train_node_list_dict = dict(list())
 
         # 顶点上的车次信息
-        self.node_train_info_dict = dict(list())
+        self.node_train_info_dict = dict(list(tuple()))
 
         # 一个车次的两个端点
         self.train_points_dict = dict(tuple())
