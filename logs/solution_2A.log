@@ -1,0 +1,27 @@
+[2019-06-03 21:49:27] INFO [__init__: get_solution_2.py, 43] user_data_path: ./data/data1_O2D.txt
+[2019-06-03 21:49:27] INFO [__init__: get_solution_2.py, 44] route_data_path: ./data/data2_routeInfo.txt
+[2019-06-03 21:49:27] INFO [__init__: get_solution_2.py, 45] node_data_path: ./data/data2_nodeInfo.txt
+[2019-06-03 21:49:27] INFO [__init__: get_solution_2.py, 46] train_data_path: ./data/data3_trainInfo.txt
+[2019-06-03 21:49:27] INFO [__init__: get_solution_2.py, 47] answer_file_path: ./data/answer_2A.txt
+[2019-06-03 21:49:27] INFO [__init__: get_solution_2.py, 48] user_path_len_file_path: ./data/user_path_len.txt
+[2019-06-03 21:49:27] INFO [__init__: get_solution_2.py, 49] route_traffic_file_path: ./data/route_traffic.txt
+[2019-06-03 21:49:27] INFO [__init__: get_solution_2.py, 50] road_distance_data_path: ./data/data2_distance_between_two_station.txt
+[2019-06-03 21:49:27] INFO [__init__: get_solution_2.py, 51] passed_user_file_path: ./data/passed_user_2A.txt
+[2019-06-03 21:49:34] INFO [load_data: get_solution_2.py, 237] train count is: 3264
+[2019-06-03 21:49:34] INFO [load_data: get_solution_2.py, 238] user count is: 1033925
+[2019-06-03 21:49:34] INFO [load_data: get_solution_2.py, 239] node count is: 328
+[2019-06-03 21:49:34] INFO [load_data: get_solution_2.py, 240] node train number count is: 60758
+[2019-06-03 21:49:34] INFO [load_data: get_solution_2.py, 241] average node train number count is: 185.2378048780488
+[2019-06-03 21:49:34] INFO [load_data: get_solution_2.py, 242] transfer node count is: 101
+[2019-06-03 21:49:34] INFO [<module>: get_solution_2.py, 718] load data done
+[2019-06-03 21:49:34] INFO [get_user_path_len_and_route_traffic: get_solution_2.py, 668] Start get user path len and route traffic. sampled user size: 104
+[2019-06-03 21:49:50] ERROR [get_user_path: get_solution_2.py, 332] user 2072180 hasn't path info: None
+[2019-06-03 21:49:50] WARNING [get_and_save_user_path_len: get_solution_2.py, 600] passed user: 2072180 path length,  path information: None
+[2019-06-03 21:49:50] ERROR [get_user_path: get_solution_2.py, 332] user 2292691 hasn't path info: None
+[2019-06-03 21:49:50] WARNING [get_and_save_user_path_len: get_solution_2.py, 600] passed user: 2292691 path length,  path information: None
+[2019-06-03 21:49:50] ERROR [get_user_path: get_solution_2.py, 332] user 218267 hasn't path info: None
+[2019-06-03 21:49:50] WARNING [get_and_save_user_path_len: get_solution_2.py, 600] passed user: 218267 path length,  path information: None
+[2019-06-03 21:55:51] ERROR [get_user_path: get_solution_2.py, 332] user 139940 hasn't path info: None
+[2019-06-03 21:55:51] WARNING [get_and_save_user_path_len: get_solution_2.py, 600] passed user: 139940 path length,  path information: None
+[2019-06-03 21:55:53] WARNING [get_and_save_user_path_len: get_solution_2.py, 614] passed user number: 4  percent: 3.85%
+[2019-06-03 21:55:53] INFO [<module>: get_solution_2.py, 745] Everything is Done

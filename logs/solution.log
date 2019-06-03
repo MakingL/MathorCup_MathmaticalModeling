@@ -1,9 +1,0 @@
-[2019-06-02 22:56:24] INFO [__init__: get_solution_2.py, 36] user_data_path: ./data/data1_O2D.txt
-[2019-06-02 22:56:24] INFO [__init__: get_solution_2.py, 37] route_data_path: ./data/data2_routeInfo.txt
-[2019-06-02 22:56:24] INFO [__init__: get_solution_2.py, 38] node_data_path: ./data/data2_nodeInfo.txt
-[2019-06-02 22:56:24] INFO [__init__: get_solution_2.py, 39] train_data_path: ./data/data3_trainInfo.txt
-[2019-06-02 22:56:24] INFO [__init__: get_solution_2.py, 40] answer_file_path: ./data/answer.txt
-[2019-06-02 22:56:24] INFO [__init__: get_solution_2.py, 41] user_path_len_file_path: ./data/user_path_len.txt
-[2019-06-02 22:56:24] INFO [__init__: get_solution_2.py, 42] route_traffic_file_path: ./data/route_traffic.txt
-[2019-06-02 22:56:24] INFO [__init__: get_solution_2.py, 43] road_distance_data_path: ./data/data2_distance_between_two_station.txt
-[2019-06-02 22:56:24] INFO [__init__: get_solution_2.py, 44] passed_user_file_path: ./data/passed_user.txt

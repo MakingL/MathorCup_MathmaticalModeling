@@ -202,3 +202,6 @@ class Route(object):
 
     def get_node_set(self):
         return self.node_set
+
+    def get_train_node_dispatch_time(self, train_number, node_id):
+        return self.train_number_dict[train_number][node_id][1]
