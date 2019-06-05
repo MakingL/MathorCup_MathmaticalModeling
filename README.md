@@ -5,8 +5,7 @@
     - 获奖说明
 - 跳转到**题目md**的链接
     - 直接链接到pdf
-- 跳转到**每题解题说明md**的链接
-    - Q1 solution *
-    - Q2 solution *
-    - Q3 solution *
-    - *表示待新建
+- 跳转到**每题解题说明md**的链接(已经建好文件)
+    - Q1 solution 
+    - Q2 solution 
+    - Q3 solution 
