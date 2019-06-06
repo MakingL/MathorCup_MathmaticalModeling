@@ -4,8 +4,7 @@
 # @File    : main.py
 import logging
 
-from Solution.Solution2A import Solution2A
-from Solution.Solution2B import Solution2B
+from Solution.Solution2 import Solution2
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG,
@@ -18,46 +17,24 @@ if __name__ == '__main__':
     # logging.disable(logging.INFO)
     # logging.disable(logging.ERROR)
 
-    # ===== 2-A 答案求解======
-    # 构建问题求解对象
-    solution_2A = Solution2A()
+    solution = Solution2()
     # 导入数据
-    solution_2A.load_data()
-    logging.info("2A load data done")
+    solution.load_data()
+    logging.info("load data done")
 
-    user_list = ["2", "7", "19", "31", "41", "71",
-                 "83", "89", "101", "113", "2845", "124801",
-                 "140610", "164834", "193196", "223919",
-                 "275403", "286898", "314976", "315621"
-                 ]
-    # @TODO: 45 号用户的行程数据推导不出：
-    #   45,12,37,10:49:00,11:05:06
-    #   查地图：
-    #       12,复兴门,1
-    #       37,积水潭,2
-    #   地图给的乘车路线:
-    #       【乘车方案】复兴门－积水潭：2号线（复兴门－积水潭，4站），预计时间约12分钟，票价3元。
-    #   行车数据并无相关的线路
-    # user_list = ["45"]
-    # logging.info("user id list is: {}".format(user_list))
-    #
-    for userId in user_list:
-        # 求解每个用户的路径数据
-        solution_2A.get_and_save_user_path(userId)
+    sampled_user_list = solution.sample_user_batch(user_sample_freq=100)
 
-    # ===============
-    # 统计用户出行线路长度及线路流量，
-    # solution_2A.get_user_path_len_and_route_traffic()
-    # ===== 2-A =======
+    # 统计用户出行线路长度及线路流量
+    passed_user_set = solution.get_user_path_len_and_route_traffic(sampled_user_list)
+    sampled_user_list = list(set(sampled_user_list) - passed_user_set)
 
+    logging.info("passed user size: {} planing user list size: {}".format(len(passed_user_set),
+                                                                          len(sampled_user_list)))    # passed_user_set = solution.get_user_path_len_and_route_traffic(sampled_user_list)
+    sampled_user_list = list(set(sampled_user_list) - passed_user_set)
 
-    # ============ 2-B ============
-    solution_2B = Solution2B()
-    solution_2B.load_data()
-    logging.info("2B load data done")
-    solution_2B.build_graph()
-
-    solution_2B.plan_all_user_path()
-    # ============ 2-B ============
+    logging.info("passed user size: {} planing user list size: {}".format(len(passed_user_set),
+                                                                          len(sampled_user_list)))
+    # 为乘客规划线路，并统计规划后的客流量
+    solution.plan_user_path(sampled_user_list)
 
     logging.info("Everything is Done")

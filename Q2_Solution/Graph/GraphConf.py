@@ -9,7 +9,6 @@ class Road(object):
         super(Road, self).__init__()
         self.road_id, self.road_len, self.start_id, self.end_id = road_conf
         self.weight = self.road_len
-        # self.weight = 2
 
 
 class Graph(object):
@@ -23,8 +22,6 @@ class Graph(object):
         self.adjacent_edge_dict = dict(dict())
         self.graph_dict = graph_dict if graph_dict is not None else dict(set())
         self.graph_adjacent_dict = dict(dict())
-        self.total_chanel = 0
-        self.total_speed = 0
 
         self.min_weight = 0x3f3f3f3f
         self.max_weight = 0
@@ -58,17 +55,14 @@ class Graph(object):
             self.adjacent_edge_dict[start_id] = dict()
         self.adjacent_edge_dict[start_id][end_id] = edge_id
 
-
         # 顶点集
-        self.add_vertex(start_id)
-        self.add_vertex(edge.end_id)
+        self.vertex_set.add(start_id)
+        self.vertex_set.add(edge.end_id)
 
         self.min_weight = min(edge.weight, self.min_weight)
         self.max_weight = max(edge.weight, self.max_weight)
         self.total_weight += edge.weight
 
-    def get_average_weight(self):
-        return self.total_weight / self.get_edge_count()
 
     def get_neighbors(self, current_id):
         neighbors = dict()
@@ -76,21 +70,6 @@ class Graph(object):
             neighbors[edge.road_id] = edge
 
         return neighbors
-
-    def add_vertex(self, node_id):
-        self.vertex_set.add(node_id)
-
-    def get_vertex_count(self):
-        return len(self.vertex_set)
-
-    def get_vertex_list(self):
-        return list(self.vertex_set)
-
-    def get_edge_count(self):
-        return len(self.edge_set)
-
-    def update_edge_weight(self, edge_id, new_weight):
-        self.edge_dict[edge_id].weight = new_weight
 
     def change_edge_weight(self, edge_id, weight_delta):
         """
@@ -103,53 +82,8 @@ class Graph(object):
         self.edge_dict[edge_id].weight += weight_delta
         return change_before, self.edge_dict[edge_id].weight
 
-    def change_edge_travel_times(self, edge_id, times_delta):
-        self.edge_dict[edge_id].traveled_times += times_delta
-
-    def decay_edge_weight(self, edge_id, decay_ratio):
-        self.edge_dict[edge_id].weight *= decay_ratio
-
-    def get_edge_traveled_times(self, edge_id):
-        return self.edge_dict[edge_id].traveled_times
-
-    def get_average_chanel(self):
-        return self.total_chanel / self.get_edge_count()
-
     def get_vertex_degree(self, vertex_id):
         return len(self.graph_dict[vertex_id])
-
-    def get_edge_obj(self, start, end):
-        start_adjacent = self.graph_adjacent_dict.get(start, None)
-        if start_adjacent is None:
-            return None
-
-        return start_adjacent.get(end, None)
-
-    def get_edge_form_id(self, edge_id):
-        return self.edge_dict.get(edge_id, None)
-
-    def get_adjacent_edge_id(self, start_vertex, end_vertex):
-        edge_id = self.adjacent_edge_dict[start_vertex][end_vertex]
-
-        # 反向边是以 “_b” 符号连接的
-        edge_id = edge_id.replace("_b", "")
-        return edge_id
-
-    def get_graph_dict(self):
-        """
-        返回图的联接表
-        :return:
-        """
-        return self.graph_dict
-
-    def get_edge_dict(self):
-        return self.edge_dict
-
-    def get_adjacent_edge_dict(self):
-        return self.adjacent_edge_dict
-
-    def get_average_road_speed(self):
-        return self.total_speed / self.get_edge_count()
 
     def get_edge_weight(self, edge_id):
         return self.edge_dict[edge_id].weight

@@ -21,6 +21,3 @@ class User(object):
 
     def get_time_info(self):
         return self.start_time, self.end_time
-
-    def get_user_id(self):
-        return self.user_id
