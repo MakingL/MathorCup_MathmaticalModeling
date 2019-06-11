@@ -1,0 +1,663 @@
+[2019-06-06 10:55:42] INFO [__init__: Solution2.py, 52] user_data_path: ./data/data1_O2D.txt
+[2019-06-06 10:55:42] INFO [__init__: Solution2.py, 53] route_data_path: ./data/data2_routeInfo.txt
+[2019-06-06 10:55:42] INFO [__init__: Solution2.py, 54] node_data_path: ./data/data2_nodeInfo.txt
+[2019-06-06 10:55:42] INFO [__init__: Solution2.py, 55] train_data_path: ./data/data3_trainInfo.txt
+[2019-06-06 10:55:42] INFO [__init__: Solution2.py, 56] answer_2A_file_path: ./data/user_path_answer.txt
+[2019-06-06 10:55:42] INFO [__init__: Solution2.py, 57] planed_user_path: ./data/planed_user_path.txt
+[2019-06-06 10:55:42] INFO [__init__: Solution2.py, 58] user_path_len_file_path: ./data/user_path_len.txt
+[2019-06-06 10:55:42] INFO [__init__: Solution2.py, 59] route_traffic_file_path: ./data/route_traffic.txt
+[2019-06-06 10:55:42] INFO [__init__: Solution2.py, 60] planed_route_traffic_file_path: ./data/planed_route_traffic.txt
+[2019-06-06 10:55:42] INFO [__init__: Solution2.py, 61] road_distance_data_path: ./data/data2_distance_between_two_station.txt
+[2019-06-06 10:55:42] INFO [__init__: Solution2.py, 62] passed_user_file_path: ./data/passed_user.txt
+[2019-06-06 10:55:49] INFO [load_data: Solution2.py, 342] train count is: 3264
+[2019-06-06 10:55:49] INFO [load_data: Solution2.py, 343] user count is: 1033925
+[2019-06-06 10:55:49] INFO [load_data: Solution2.py, 344] node count is: 328
+[2019-06-06 10:55:49] INFO [load_data: Solution2.py, 345] node train number count is: 60758
+[2019-06-06 10:55:49] INFO [load_data: Solution2.py, 346] average node train number count is: 185.2378048780488
+[2019-06-06 10:55:49] INFO [load_data: Solution2.py, 347] transfer node count is: 101
+[2019-06-06 10:55:53] INFO [<module>: main.py, 23] load data done
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 151 time: 1900-01-01 05:45:00 transfer_node: 151
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['151', '139', '138', '137', '72', '71', '70', '238', '239', '240', '211', '212', '213', '65', '64'] user: 1722986
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 151 time: 1900-01-01 05:59:00 transfer_node: 151
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['135', '136', '137', '138', '139', '151'] user: 906378
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 230 time: 1900-01-01 07:01:34 transfer_node: 230
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['95', '96', '97', '98', '99', '100', '101', '102', '103', '104', '105', '106', '107', '108', '109', '110', '111', '46', '45', '44', '43', '76', '77', '78', '79', '80', '81', '230'] user: 2101866
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 254 time: 1900-01-01 07:14:05 transfer_node: 254
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['36', '35', '34', '33', '32', '31', '30', '29', '28', '27', '26', '25', '23', '22', '21', '20', '19', '18', '17', '110', '109', '108', '140', '139', '138', '137', '72', '71', '70', '238', '239', '240', '241', '242', '243', '254'] user: 2343095
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 173 time: 1900-01-01 06:06:00 transfer_node: 173
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['173', '308', '309', '310', '311', '312', '77', '78', '79', '80', '81', '230', '231', '232'] user: 2068963
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 238 time: 1900-01-01 06:31:00 transfer_node: 238
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['83', '82', '81', '80', '79', '78', '77', '76', '43', '42', '41', '40', '39', '38', '238', '70', '69'] user: 1781695
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 116 time: 1900-01-01 06:16:00 transfer_node: 116
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['121', '120', '119', '118', '117', '116', '234', '233', '232', '231', '230', '229', '228', '227', '226', '225'] user: 2059343
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 221 time: 1900-01-01 06:23:15 transfer_node: 221
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['2', '3', '4', '5', '6', '7', '8', '221'] user: 2216129
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 55 time: 1900-01-01 06:38:42 transfer_node: 55
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['227', '228', '229', '230', '81', '80', '79', '78', '77', '76', '43', '44', '45', '46', '47', '48', '49', '50', '51', '55', '253', '252', '251', '250', '249', '268', '269', '270', '271', '272', '273', '274', '275', '276', '277', '278', '279'] user: 209586
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 68 time: 1900-01-01 06:10:00 transfer_node: 68
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['68', '169', '170', '171', '172', '173'] user: 1523164
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 65 time: 1900-01-01 06:34:51 transfer_node: 65
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['219', '218', '217', '216', '215', '214', '213', '65'] user: 1754864
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 253 time: 1900-01-01 06:07:00 transfer_node: 253
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['253', '51', '50', '49', '48', '47', '46', '45', '44', '43', '76', '77', '78', '79'] user: 1873546
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 46 time: 1900-01-01 06:45:04 transfer_node: 46
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['69', '70', '71', '72', '137', '138', '139', '140', '108', '109', '110', '111', '46'] user: 544003
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 221 time: 1900-01-01 06:22:00 transfer_node: 221
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['221', '8', '9', '10', '11', '12', '41', '42', '43', '76', '77', '78', '79', '80', '81', '230', '231'] user: 2213042
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 247 time: 1900-01-01 06:43:18 transfer_node: 247
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['251', '250', '204', '205', '102', '101', '100', '99', '98', '97', '247'] user: 400827
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 312 time: 1900-01-01 06:24:00 transfer_node: 312
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['312', '77', '76', '43', '42', '41', '40', '39', '38', '238', '239', '240', '241'] user: 505904
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 65 time: 1900-01-01 07:26:59 transfer_node: 65
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['280', '279', '278', '277', '276', '275', '274', '273', '272', '271', '270', '269', '268', '249', '250', '204', '205', '206', '207', '208', '209', '210', '211', '212', '213', '65'] user: 1774696
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 55 time: 1900-01-01 06:34:42 transfer_node: 55
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['47', '48', '49', '50', '51', '55', '253', '252', '251', '250', '249', '268', '269', '270', '271', '272', '273', '274', '275', '276'] user: 191706
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 55 time: 1900-01-01 07:26:42 transfer_node: 55
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['127', '126', '125', '124', '123', '122', '121', '120', '119', '118', '117', '116', '115', '114', '113', '112', '111', '46', '47', '48', '49', '50', '51', '55', '253', '252', '251', '250', '249', '268', '269', '270', '271'] user: 117797
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 52 time: 1900-01-01 07:10:44 transfer_node: 52
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['82', '81', '80', '79', '78', '77', '76', '43', '44', '45', '46', '111', '110', '109', '108', '107', '106', '105', '52'] user: 575392
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 234 time: 1900-01-01 06:42:00 transfer_node: 234
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['120', '119', '118', '117', '234', '116', '115', '114', '113', '112', '316'] user: 1357806
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 247 time: 1900-01-01 06:32:00 transfer_node: 247
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['247', '97', '98', '99', '100', '282', '283', '284', '158', '157', '156', '207', '208', '209', '210', '211', '240', '239'] user: 431970
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 55 time: 1900-01-01 06:54:42 transfer_node: 55
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['45', '46', '47', '48', '49', '50', '51', '55', '253', '252', '251', '250', '249', '268', '269', '270', '271', '272', '273', '274', '275', '276', '277', '278', '279'] user: 206878
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 249 time: 1900-01-01 07:04:00 transfer_node: 249
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['94', '95', '96', '97', '98', '99', '100', '282', '281', '268', '249'] user: 478682
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 254 time: 1900-01-01 07:18:50 transfer_node: 254
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['251', '250', '204', '205', '206', '207', '208', '209', '210', '211', '240', '241', '242', '243', '254'] user: 2366302
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 55 time: 1900-01-01 06:54:42 transfer_node: 55
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['47', '48', '49', '50', '51', '55', '253', '252', '251', '250', '249', '268', '269', '270', '271', '272', '273', '274', '275', '276', '277'] user: 143931
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 291 time: 1900-01-01 06:43:00 transfer_node: 291
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['291', '269', '268', '281', '282', '283', '284', '285'] user: 172082
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 221 time: 1900-01-01 06:58:35 transfer_node: 221
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['2', '3', '4', '5', '6', '7', '8', '221'] user: 2040611
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 55 time: 1900-01-01 07:44:42 transfer_node: 55
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['129', '128', '127', '126', '125', '124', '123', '122', '121', '120', '119', '118', '117', '116', '115', '114', '113', '112', '111', '46', '47', '48', '49', '50', '51', '55', '253', '252', '251', '250'] user: 417966
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 170 time: 1900-01-01 07:30:40 transfer_node: 170
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['146', '145', '144', '143', '142', '141', '140', '139', '138', '137', '136', '135', '134', '170'] user: 1444795
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 55 time: 1900-01-01 07:20:42 transfer_node: 55
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['236', '237', '193', '194', '195', '196', '20', '19', '18', '48', '49', '50', '51', '55', '253', '252'] user: 279394
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 52 time: 1900-01-01 07:33:14 transfer_node: 52
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['300', '150', '149', '148', '147', '146', '145', '144', '143', '142', '141', '140', '108', '107', '106', '105', '52'] user: 597830
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 254 time: 1900-01-01 06:54:00 transfer_node: 254
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['254', '243', '242', '241', '240', '239', '238', '70', '38', '39', '40', '41', '42', '43', '44', '45'] user: 829375
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 253 time: 1900-01-01 06:55:00 transfer_node: 253
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['253', '51', '50', '49', '48', '47', '46', '45'] user: 610180
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 316 time: 1900-01-01 06:48:00 transfer_node: 316
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['316', '112', '111', '46', '45', '44', '43', '42', '41', '12', '11', '10', '9', '8', '221', '220', '219', '218'] user: 2238046
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 284 time: 1900-01-01 07:21:38 transfer_node: 284
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['74', '73', '72', '137', '138', '139', '151', '152', '153', '154', '155', '156', '157', '158', '284'] user: 170136
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 254 time: 1900-01-01 06:58:00 transfer_node: 254
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['254', '243', '242', '241', '240', '239'] user: 389600
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 249 time: 1900-01-01 07:20:30 transfer_node: 249
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['97', '98', '99', '100', '282', '281', '268', '249'] user: 476514
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 256 time: 1900-01-01 07:05:00 transfer_node: 256
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['256', '168', '167', '166', '165', '164', '246', '247', '97', '98', '99', '100', '101', '102', '103', '104', '105', '106', '107', '108', '109', '110', '111', '112', '316', '317', '318'] user: 1432643
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 151 time: 1900-01-01 07:27:35 transfer_node: 151
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['147', '146', '145', '144', '143', '142', '141', '140', '139', '151'] user: 922510
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 238 time: 1900-01-01 07:22:15 transfer_node: 238
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['47', '46', '111', '110', '109', '108', '140', '139', '138', '137', '72', '71', '70', '238', '38'] user: 645345
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 254 time: 1900-01-01 07:20:55 transfer_node: 254
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['95', '96', '97', '247', '246', '245', '244', '243', '254'] user: 2404671
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 238 time: 1900-01-01 08:09:50 transfer_node: 238
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['36', '35', '34', '33', '32', '31', '30', '29', '28', '27', '26', '25', '23', '22', '21', '20', '19', '18', '17', '110', '109', '108', '140', '139', '138', '137', '72', '71', '70', '238', '38'] user: 623779
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 117 time: 1900-01-01 06:59:00 transfer_node: 117
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['117', '234', '116', '115', '114', '113', '112', '316', '315', '314', '313', '312', '311'] user: 1381688
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 234 time: 1900-01-01 07:14:30 transfer_node: 234
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['119', '118', '117', '234', '116', '115', '114', '113', '112', '316', '315', '314', '313', '312', '311', '310', '309'] user: 1405080
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 65 time: 1900-01-01 07:08:54 transfer_node: 65
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['209', '210', '211', '212', '213', '65'] user: 1739944
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 70 time: 1900-01-01 07:28:50 transfer_node: 70
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['244', '243', '242', '241', '240', '239', '238', '70', '38', '39', '40', '41', '42', '43', '76', '77', '78', '79', '80'] user: 1940363
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 254 time: 1900-01-01 08:17:20 transfer_node: 254
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['278', '277', '276', '275', '274', '273', '272', '271', '270', '269', '268', '249', '250', '204', '205', '206', '207', '208', '209', '210', '211', '240', '241', '242', '243', '254'] user: 2408036
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 312 time: 1900-01-01 07:44:03 transfer_node: 312
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['101', '102', '103', '104', '105', '106', '107', '108', '109', '110', '111', '46', '45', '44', '43', '76', '77', '312'] user: 1400984
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 70 time: 1900-01-01 08:13:00 transfer_node: 70
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['84', '83', '82', '81', '80', '79', '78', '77', '76', '43', '42', '41', '40', '39', '38', '70', '238', '239', '240', '211', '212', '213', '65', '64', '63'] user: 1699267
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 173 time: 1900-01-01 07:34:40 transfer_node: 173
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['82', '81', '80', '79', '78', '77', '312', '311', '310', '309', '308', '173'] user: 1543444
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 221 time: 1900-01-01 07:39:38 transfer_node: 221
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['194', '195', '319', '318', '317', '316', '112', '111', '46', '45', '44', '43', '42', '41', '12', '11', '10', '9', '8', '221'] user: 2261247
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 39 time: 1900-01-01 07:35:15 transfer_node: 39
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['224', '223', '175', '174', '173', '172', '171', '170', '134', '135', '136', '39'] user: 199031
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 262 time: 1900-01-01 07:08:00 transfer_node: 262
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['262', '176', '175', '174', '173', '308', '309', '310', '311', '312', '313', '314', '315', '316', '317', '318', '319', '195', '194', '193'] user: 2053731
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 52 time: 1900-01-01 07:15:00 transfer_node: 52
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['52', '105', '106', '107', '108', '109', '110', '111', '46'] user: 84075
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 117 time: 1900-01-01 07:07:00 transfer_node: 117
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['117', '234', '116', '115', '114', '113', '112', '111', '46', '45', '44', '43', '42', '41', '40'] user: 4440
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 234 time: 1900-01-01 07:27:30 transfer_node: 234
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['120', '119', '118', '117', '234', '116', '115', '114', '113', '112', '111', '46', '47', '48', '49', '50'] user: 217097
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 117 time: 1900-01-01 07:12:00 transfer_node: 117
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['117', '234', '116', '115', '114', '113', '112', '111', '46', '47', '48', '49', '50'] user: 542951
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 51 time: 1900-01-01 07:38:25 transfer_node: 51
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['288', '289', '290', '291', '269', '268', '249', '250', '251', '252', '253', '51'] user: 680624
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 238 time: 1900-01-01 08:05:00 transfer_node: 238
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['38', '238', '70', '71', '72', '73'] user: 1765317
+[2019-06-06 10:55:53] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 55 time: 1900-01-01 07:42:12 transfer_node: 55
+[2019-06-06 10:55:53] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['22', '21', '20', '19', '18', '48', '49', '50', '51', '55', '253', '252'] user: 465608
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 55 time: 1900-01-01 07:40:40 transfer_node: 55
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['209', '208', '207', '206', '205', '102', '103', '104', '105', '52', '51', '55', '253'] user: 262113
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 164 time: 1900-01-01 07:19:00 transfer_node: 164
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['164', '246', '247', '97', '98', '99', '100', '101', '102', '103', '104', '105', '52'] user: 245313
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 234 time: 1900-01-01 07:34:00 transfer_node: 234
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['120', '119', '118', '117', '234', '116', '115', '114', '113', '112', '111', '110', '109', '108', '140', '139', '151', '152', '153', '54'] user: 700983
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 49 time: 1900-01-01 07:56:55 transfer_node: 49
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['300', '150', '149', '148', '147', '146', '145', '144', '143', '142', '141', '49'] user: 620801
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 116 time: 1900-01-01 07:47:00 transfer_node: 116
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['126', '125', '124', '123', '122', '121', '120', '119', '118', '117', '116', '234', '233', '232', '231', '230', '81', '80', '79'] user: 1669036
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 134 time: 1900-01-01 07:19:00 transfer_node: 134
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['134', '170', '171', '172', '173', '308', '309', '310', '311'] user: 1373379
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 247 time: 1900-01-01 07:17:00 transfer_node: 247
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['247', '97', '98', '99', '100', '282', '283', '284', '158', '157', '156', '207', '208', '209', '210', '211', '240', '241'] user: 267290
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 54 time: 1900-01-01 07:23:00 transfer_node: 54
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['54', '153', '152', '151', '139', '140', '108', '109', '110', '17', '18', '19', '20', '196', '195', '194', '193'] user: 2056548
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 221 time: 1900-01-01 08:04:28 transfer_node: 221
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['145', '144', '143', '198', '197', '196', '20', '19', '18', '17', '16', '15', '14', '13', '12', '11', '10', '9', '8', '221'] user: 2084393
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 55 time: 1900-01-01 08:10:42 transfer_node: 55
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['226', '225', '224', '223', '175', '174', '173', '172', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '48', '49', '50', '51', '55', '253', '252'] user: 478619
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 221 time: 1900-01-01 07:44:05 transfer_node: 221
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['2', '3', '4', '5', '6', '7', '8', '221'] user: 2289366
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 51 time: 1900-01-01 07:46:40 transfer_node: 51
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['248', '249', '250', '251', '252', '253', '51'] user: 803675
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 230 time: 1900-01-01 08:26:34 transfer_node: 230
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['30', '29', '28', '27', '26', '25', '24', '22', '21', '20', '19', '18', '48', '47', '46', '45', '44', '43', '76', '77', '78', '79', '80', '81', '230'] user: 2271689
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 172 time: 1900-01-01 07:59:53 transfer_node: 172
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['194', '195', '319', '318', '317', '316', '112', '111', '46', '45', '44', '43', '42', '41', '12', '11', '10', '9', '172'] user: 1565417
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 65 time: 1900-01-01 08:00:29 transfer_node: 65
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['201', '202', '203', '204', '205', '206', '207', '208', '209', '210', '211', '212', '213', '65'] user: 1740484
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 65 time: 1900-01-01 07:42:29 transfer_node: 65
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['210', '211', '212', '213', '65'] user: 1893239
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 172 time: 1900-01-01 08:27:13 transfer_node: 172
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['34', '33', '32', '31', '30', '29', '28', '27', '26', '25', '23', '22', '21', '20', '19', '18', '17', '16', '15', '14', '13', '12', '11', '10', '9', '172'] user: 1449111
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 70 time: 1900-01-01 07:40:05 transfer_node: 70
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['64', '65', '213', '212', '211', '240', '239', '238', '70', '38', '39', '40', '41', '42', '43', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86'] user: 1091914
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 254 time: 1900-01-01 08:17:20 transfer_node: 254
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['7', '8', '9', '172', '171', '170', '169', '68', '67', '66', '65', '213', '212', '211', '240', '241', '242', '243', '254'] user: 2403199
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 246 time: 1900-01-01 07:43:00 transfer_node: 246
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['246', '164', '163', '162', '161', '160', '159', '158', '157', '156', '155', '154', '153', '54', '37', '38', '39', '40'] user: 682727
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 254 time: 1900-01-01 07:58:25 transfer_node: 254
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['166', '165', '164', '246', '245', '244', '243', '254'] user: 2395081
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 65 time: 1900-01-01 08:34:54 transfer_node: 65
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['149', '148', '147', '146', '145', '144', '143', '142', '141', '140', '139', '138', '137', '72', '71', '70', '238', '239', '240', '211', '212', '213', '65'] user: 1721692
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 55 time: 1900-01-01 07:46:42 transfer_node: 55
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['47', '48', '49', '50', '51', '55', '253'] user: 322476
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 172 time: 1900-01-01 08:16:53 transfer_node: 172
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['22', '21', '20', '19', '18', '17', '16', '15', '14', '13', '12', '11', '10', '9', '172'] user: 1588922
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 116 time: 1900-01-01 07:42:00 transfer_node: 116
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['116', '234', '235', '236', '237', '193', '194', '195', '319', '320', '321'] user: 1403042
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 249 time: 1900-01-01 08:01:00 transfer_node: 249
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['94', '95', '96', '97', '98', '99', '100', '282', '281', '268', '249'] user: 322265
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 39 time: 1900-01-01 07:58:20 transfer_node: 39
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['142', '141', '140', '139', '138', '137', '136', '39'] user: 640289
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 249 time: 1900-01-01 08:01:00 transfer_node: 249
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['95', '96', '97', '98', '99', '100', '282', '281', '268', '249'] user: 287268
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 105 time: 1900-01-01 07:41:00 transfer_node: 105
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['105', '52', '53', '54', '37'] user: 612103
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 312 time: 1900-01-01 07:38:00 transfer_node: 312
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['312', '77', '76', '43', '42', '41', '40', '39', '38', '238', '239', '240', '211', '212', '213', '65', '64'] user: 1925665
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 164 time: 1900-01-01 07:41:00 transfer_node: 164
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['164', '246', '245', '244', '243', '242', '241', '240', '211', '212', '213', '65', '66', '67', '68', '169', '170', '171', '172', '9', '8', '221', '222'] user: 2235137
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 55 time: 1900-01-01 08:35:00 transfer_node: 55
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['279', '278', '277', '276', '275', '274', '273', '272', '271', '270', '269', '268', '249', '250', '251', '252', '253', '55', '51', '50', '49', '48', '47', '46', '45', '44', '43', '76'] user: 1936642
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 164 time: 1900-01-01 07:43:00 transfer_node: 164
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['164', '246', '245', '244', '243', '254'] user: 2333272
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 221 time: 1900-01-01 07:45:00 transfer_node: 221
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['221', '8', '9', '10', '11', '12', '41', '42', '43', '44', '45', '46', '47'] user: 750072
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 211 time: 1900-01-01 07:48:00 transfer_node: 211
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['211', '240', '239', '238', '38'] user: 56618
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 65 time: 1900-01-01 08:07:54 transfer_node: 65
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['204', '205', '206', '207', '208', '209', '210', '211', '212', '213', '65'] user: 1762747
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 136 time: 1900-01-01 07:53:00 transfer_node: 136
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['136', '39', '40', '41', '42'] user: 778886
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 254 time: 1900-01-01 07:50:00 transfer_node: 254
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['254', '243', '242', '241', '240', '211', '210', '209', '208', '207', '206', '205', '204', '250', '251'] user: 391585
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 75 time: 1900-01-01 08:14:45 transfer_node: 75
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['175', '174', '173', '172', '9', '10', '11', '12', '13', '75'] user: 1949050
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 254 time: 1900-01-01 08:03:50 transfer_node: 254
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['245', '244', '243', '254'] user: 2378255
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 238 time: 1900-01-01 08:36:30 transfer_node: 238
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['79', '78', '77', '76', '43', '42', '41', '40', '39', '38', '238', '70', '69'] user: 1623280
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 234 time: 1900-01-01 08:06:30 transfer_node: 234
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['119', '118', '117', '234', '116', '115', '114', '113', '112', '111', '110', '109', '108', '107', '106', '105', '104', '103', '102', '101', '100', '99', '98', '97', '247', '246', '245', '244'] user: 444933
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 254 time: 1900-01-01 08:09:20 transfer_node: 254
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['238', '239', '240', '241', '242', '243', '254'] user: 2318950
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 230 time: 1900-01-01 07:49:00 transfer_node: 230
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['230', '81', '80', '79', '78', '77', '76', '43', '42', '41', '40', '39', '38'] user: 842394
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 221 time: 1900-01-01 08:21:13 transfer_node: 221
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['199', '198', '197', '196', '20', '19', '18', '17', '16', '15', '14', '13', '12', '11', '10', '9', '8', '221'] user: 2063684
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 76 time: 1900-01-01 08:43:01 transfer_node: 76
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['33', '32', '31', '30', '29', '28', '27', '26', '25', '23', '22', '21', '20', '19', '18', '48', '47', '46', '45', '44', '43', '76'] user: 1726278
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 254 time: 1900-01-01 08:33:20 transfer_node: 254
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['82', '81', '80', '79', '78', '77', '76', '43', '42', '41', '40', '39', '38', '238', '239', '240', '241', '242', '243', '254'] user: 2342046
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 238 time: 1900-01-01 09:00:30 transfer_node: 238
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['164', '163', '162', '161', '160', '159', '158', '157', '156', '155', '154', '153', '54', '37', '38', '238', '70', '71'] user: 1845383
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 198 time: 1900-01-01 07:53:00 transfer_node: 198
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['198', '143', '142', '141', '140', '139', '138', '137', '72', '71', '70', '238', '239', '240', '241', '242'] user: 504126
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 49 time: 1900-01-01 08:17:35 transfer_node: 49
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['131', '132', '133', '134', '135', '136', '137', '138', '139', '140', '141', '49'] user: 223522
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 49 time: 1900-01-01 08:24:15 transfer_node: 49
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['94', '95', '96', '97', '98', '99', '100', '101', '102', '103', '104', '105', '106', '107', '108', '140', '141', '49'] user: 588020
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 55 time: 1900-01-01 08:17:56 transfer_node: 55
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['246', '247', '97', '98', '99', '100', '101', '102', '103', '104', '105', '52', '51', '55', '253'] user: 423469
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 238 time: 1900-01-01 08:34:00 transfer_node: 238
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['79', '78', '77', '76', '43', '42', '41', '40', '39', '38', '238', '70', '69'] user: 1710733
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 247 time: 1900-01-01 08:00:00 transfer_node: 247
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['247', '97', '98', '99', '100', '101', '102', '205', '204', '250'] user: 461729
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 132 time: 1900-01-01 08:02:00 transfer_node: 132
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['132', '219', '218', '217'] user: 2201490
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 284 time: 1900-01-01 08:24:43 transfer_node: 284
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['165', '164', '163', '162', '161', '160', '159', '158', '284'] user: 174839
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 256 time: 1900-01-01 08:03:00 transfer_node: 256
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['256', '168', '167', '166', '165', '164', '246', '247', '97', '98', '99', '100', '101', '102', '205', '204', '250', '251', '252'] user: 507271
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 70 time: 1900-01-01 09:04:00 transfer_node: 70
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['85', '84', '83', '82', '81', '80', '79', '78', '77', '76', '43', '42', '41', '40', '39', '38', '70', '238', '239', '240', '211', '212', '213', '65'] user: 1689292
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 54 time: 1900-01-01 08:41:15 transfer_node: 54
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['150', '149', '148', '147', '146', '145', '144', '143', '142', '141', '140', '139', '151', '152', '153', '54'] user: 73002
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 65 time: 1900-01-01 08:36:44 transfer_node: 65
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['20', '19', '18', '17', '110', '109', '108', '140', '139', '138', '137', '72', '71', '70', '238', '239', '240', '211', '212', '213', '65'] user: 1902312
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 238 time: 1900-01-01 08:44:30 transfer_node: 238
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['37', '38', '238', '70', '71', '72', '73', '74'] user: 1726639
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 54 time: 1900-01-01 08:25:39 transfer_node: 54
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['163', '162', '161', '160', '159', '158', '157', '156', '155', '154', '153', '54'] user: 719875
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 75 time: 1900-01-01 08:30:48 transfer_node: 75
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['322', '321', '320', '319', '195', '196', '20', '19', '18', '17', '16', '15', '14', '13', '75'] user: 2012331
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 70 time: 1900-01-01 08:25:35 transfer_node: 70
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['62', '63', '64', '65', '213', '212', '211', '240', '239', '238', '70', '38', '39', '40', '41', '42', '43', '76', '77', '78', '79'] user: 1957282
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 76 time: 1900-01-01 08:06:00 transfer_node: 76
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['76', '43', '44', '45', '46', '47', '48', '49', '50', '51'] user: 662960
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 254 time: 1900-01-01 08:44:00 transfer_node: 254
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['201', '202', '203', '204', '205', '206', '207', '208', '209', '210', '211', '240', '241', '242', '243', '254'] user: 2426427
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 175 time: 1900-01-01 09:39:50 transfer_node: 175
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['227', '226', '225', '224', '223', '175'] user: 1599330
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 230 time: 1900-01-01 07:58:00 transfer_node: 230
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['230', '81', '82', '83', '84', '85', '86'] user: 1077819
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 238 time: 1900-01-01 08:29:00 transfer_node: 238
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['177', '176', '175', '174', '173', '172', '171', '170', '134', '135', '136', '39', '38', '238', '70', '71'] user: 1768158
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 240 time: 1900-01-01 08:44:31 transfer_node: 240
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['94', '95', '96', '97', '98', '99', '100', '282', '283', '284', '158', '157', '156', '207', '208', '209', '210', '211', '240'] user: 342547
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 52 time: 1900-01-01 07:59:00 transfer_node: 52
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['52', '105', '106', '107', '108', '109', '110', '111', '46', '47'] user: 218339
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 254 time: 1900-01-01 08:17:20 transfer_node: 254
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['66', '65', '213', '212', '211', '240', '241', '242', '243', '254'] user: 2314897
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 170 time: 1900-01-01 08:07:40 transfer_node: 170
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['131', '132', '133', '134', '170'] user: 1563009
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 254 time: 1900-01-01 08:13:00 transfer_node: 254
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['254', '243', '242', '241', '240', '211', '210', '209', '208', '207', '206', '205', '102', '103', '104', '105', '52', '51'] user: 662848
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 253 time: 1900-01-01 08:16:00 transfer_node: 253
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['253', '51', '52', '53', '54', '37', '38', '238', '239', '240', '241', '242'] user: 478288
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 70 time: 1900-01-01 09:10:00 transfer_node: 70
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['233', '232', '231', '230', '81', '80', '79', '78', '77', '76', '43', '42', '41', '40', '39', '38', '70', '238', '239', '240', '241', '242'] user: 336377
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 254 time: 1900-01-01 08:28:00 transfer_node: 254
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['239', '240', '241', '242', '243', '254'] user: 2418639
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 254 time: 1900-01-01 08:12:00 transfer_node: 254
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['254', '243', '242', '241', '240', '239', '238'] user: 332326
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 68 time: 1900-01-01 08:33:35 transfer_node: 68
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['176', '175', '174', '173', '172', '171', '170', '169', '68'] user: 1624277
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 52 time: 1900-01-01 08:34:04 transfer_node: 52
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['194', '195', '196', '20', '19', '18', '17', '110', '109', '108', '107', '106', '105', '52'] user: 4465
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 65 time: 1900-01-01 08:39:29 transfer_node: 65
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['256', '255', '254', '243', '242', '241', '240', '211', '212', '213', '65'] user: 1985890
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 72 time: 1900-01-01 08:34:30 transfer_node: 72
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['146', '145', '144', '143', '142', '141', '140', '139', '138', '137', '72'] user: 1933288
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 254 time: 1900-01-01 08:30:50 transfer_node: 254
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['208', '209', '210', '211', '240', '241', '242', '243', '254'] user: 2407251
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 262 time: 1900-01-01 08:12:00 transfer_node: 262
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['262', '176', '175', '174', '173', '172', '9', '10', '11', '12', '13', '75'] user: 1939005
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 54 time: 1900-01-01 08:15:00 transfer_node: 54
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['54', '153', '152', '151', '139', '140', '108', '109', '110', '111', '46', '47'] user: 712727
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 153 time: 1900-01-01 08:08:00 transfer_node: 153
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['153', '54', '37', '38', '39', '136', '135', '134', '170', '171', '172', '173', '174'] user: 1586429
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 151 time: 1900-01-01 09:35:50 transfer_node: 151
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['256', '255', '254', '243', '242', '241', '240', '239', '238', '38', '70', '71', '72', '137', '138', '139', '151'] user: 993630
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 70 time: 1900-01-01 08:35:55 transfer_node: 70
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['244', '243', '242', '241', '240', '239', '238', '70', '38'] user: 647851
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 247 time: 1900-01-01 08:15:00 transfer_node: 247
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['247', '97', '98', '99', '100', '282', '281', '268', '249'] user: 382520
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 55 time: 1900-01-01 09:16:42 transfer_node: 55
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['185', '184', '183', '182', '181', '180', '179', '178', '177', '176', '175', '174', '173', '172', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '48', '49', '50', '51', '55', '253', '252'] user: 318489
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 256 time: 1900-01-01 08:17:00 transfer_node: 256
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['256', '168', '167', '166', '165', '164', '246', '247', '97', '98', '99', '100', '101', '102', '103', '104', '105', '52'] user: 591141
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 65 time: 1900-01-01 09:03:59 transfer_node: 65
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['273', '272', '271', '270', '269', '268', '249', '250', '204', '205', '206', '207', '208', '209', '210', '211', '212', '213', '65'] user: 1832133
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 249 time: 1900-01-01 09:11:00 transfer_node: 249
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['259', '258', '257', '256', '168', '167', '166', '165', '164', '246', '247', '97', '98', '99', '100', '282', '281', '268', '249'] user: 504189
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 173 time: 1900-01-01 08:50:40 transfer_node: 173
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['85', '84', '83', '82', '81', '80', '79', '78', '77', '312', '311', '310', '309', '308', '173'] user: 1591728
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 172 time: 1900-01-01 08:44:10 transfer_node: 172
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '172'] user: 1588605
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 173 time: 1900-01-01 09:11:10 transfer_node: 173
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['327', '326', '325', '324', '323', '322', '321', '320', '319', '318', '317', '316', '315', '314', '313', '312', '311', '310', '309', '308', '173'] user: 1593234
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 65 time: 1900-01-01 08:41:14 transfer_node: 65
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['244', '243', '242', '241', '240', '211', '212', '213', '65'] user: 1863619
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 268 time: 1900-01-01 08:35:00 transfer_node: 268
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['268', '249', '250', '204', '203', '202', '201', '200', '199', '198', '197', '196', '195', '194', '193', '237', '236', '235'] user: 2225674
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 249 time: 1900-01-01 08:51:00 transfer_node: 249
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['97', '98', '99', '100', '282', '281', '268', '249'] user: 407532
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 65 time: 1900-01-01 08:48:39 transfer_node: 65
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['203', '204', '205', '206', '207', '208', '209', '210', '211', '212', '213', '65'] user: 2009539
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 238 time: 1900-01-01 08:52:00 transfer_node: 238
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['50', '51', '52', '53', '54', '37', '38', '238', '70', '69', '68', '67', '66'] user: 1640808
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 254 time: 1900-01-01 08:41:55 transfer_node: 254
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['245', '244', '243', '254'] user: 2321005
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 52 time: 1900-01-01 08:52:46 transfer_node: 52
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['97', '98', '99', '100', '101', '102', '103', '104', '105', '52'] user: 610233
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 116 time: 1900-01-01 08:58:30 transfer_node: 116
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['126', '125', '124', '123', '122', '121', '120', '119', '118', '117', '116', '234', '233', '232', '231'] user: 2055253
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 23 time: 1900-01-01 08:34:00 transfer_node: 23
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['23', '25', '26', '27', '28', '29', '30', '31'] user: 1223673
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 170 time: 1900-01-01 09:05:20 transfer_node: 170
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['115', '114', '113', '112', '111', '46', '45', '44', '43', '42', '41', '40', '39', '136', '135', '134', '170'] user: 1534665
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 198 time: 1900-01-01 08:36:00 transfer_node: 198
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['198', '143', '142', '141', '140', '139', '138', '137', '136', '135', '134', '133', '132', '219'] user: 2107084
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 254 time: 1900-01-01 08:28:00 transfer_node: 254
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['254', '243', '242', '241', '240', '239', '238', '70', '38', '39', '40', '41', '42', '43', '44'] user: 81753
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 238 time: 1900-01-01 08:35:00 transfer_node: 238
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['238', '38', '37', '54', '153', '154', '155', '156', '157', '158', '159', '160', '161', '162', '163', '164'] user: 855522
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 52 time: 1900-01-01 09:05:44 transfer_node: 52
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['82', '81', '80', '79', '78', '77', '76', '43', '44', '45', '46', '111', '110', '109', '108', '107', '106', '105', '52'] user: 801221
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 254 time: 1900-01-01 08:36:30 transfer_node: 254
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['245', '244', '243', '254'] user: 2394710
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 249 time: 1900-01-01 08:55:30 transfer_node: 249
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['94', '95', '96', '97', '98', '99', '100', '282', '281', '268', '249'] user: 461461
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 247 time: 1900-01-01 08:36:00 transfer_node: 247
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['247', '97', '98', '99', '100', '101', '102', '103', '104', '105', '52', '51', '50'] user: 800050
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 240 time: 1900-01-01 09:04:26 transfer_node: 240
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['95', '96', '97', '98', '99', '100', '282', '283', '284', '158', '157', '156', '207', '208', '209', '210', '211', '240'] user: 393505
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 151 time: 1900-01-01 08:28:00 transfer_node: 151
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['151', '139', '138', '137', '72', '73', '74', '75', '76', '43', '42'] user: 544518
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 70 time: 1900-01-01 09:08:00 transfer_node: 70
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['42', '41', '40', '39', '38', '70', '238', '239'] user: 342133
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 164 time: 1900-01-01 08:27:00 transfer_node: 164
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['164', '246', '245', '244', '243', '242', '241'] user: 482589
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 70 time: 1900-01-01 09:09:55 transfer_node: 70
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['257', '256', '255', '254', '243', '242', '241', '240', '239', '238', '70', '38', '39', '40', '41', '42'] user: 791340
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 52 time: 1900-01-01 09:13:01 transfer_node: 52
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['242', '241', '240', '211', '210', '209', '208', '207', '206', '205', '102', '103', '104', '105', '52'] user: 817038
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 246 time: 1900-01-01 08:43:00 transfer_node: 246
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['246', '164', '163', '162', '161', '160', '159', '158', '157', '156', '155', '154', '153', '54', '37', '38', '70', '238'] user: 309226
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 46 time: 1900-01-01 10:03:34 transfer_node: 46
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['242', '241', '240', '239', '238', '38', '70', '71', '72', '137', '138', '139', '140', '108', '109', '110', '111', '46'] user: 231571
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 213 time: 1900-01-01 08:38:00 transfer_node: 213
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['213', '65', '64', '63', '62', '61', '60'] user: 2025871
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 202 time: 1900-01-01 08:44:00 transfer_node: 202
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['202', '56', '55', '51', '50', '49', '48', '47', '46', '45', '44', '43', '76', '77', '78', '79', '80', '81', '82', '83', '84'] user: 1084602
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 49 time: 1900-01-01 09:05:05 transfer_node: 49
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['148', '147', '146', '145', '144', '143', '142', '141', '49'] user: 644788
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 268 time: 1900-01-01 08:43:00 transfer_node: 268
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['268', '249', '250', '204', '205', '206', '207', '208', '209', '210', '211', '240', '241', '242', '243', '254'] user: 2340607
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 249 time: 1900-01-01 09:06:00 transfer_node: 249
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['246', '247', '97', '98', '99', '100', '282', '281', '268', '249'] user: 441726
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 49 time: 1900-01-01 08:56:40 transfer_node: 49
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['135', '136', '137', '138', '139', '140', '141', '49'] user: 718176
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 254 time: 1900-01-01 08:41:00 transfer_node: 254
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['254', '243', '242', '241', '240', '211', '210', '209', '208', '207', '206', '205', '102', '103', '104', '105', '52', '51'] user: 694449
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 238 time: 1900-01-01 09:23:30 transfer_node: 238
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['38', '238', '70', '69', '68', '67'] user: 1980772
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 55 time: 1900-01-01 08:49:42 transfer_node: 55
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['49', '50', '51', '55', '253', '252', '251', '250', '249', '268', '269', '270', '271', '272', '273', '274', '275', '276', '277', '278', '279'] user: 91647
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 254 time: 1900-01-01 09:19:50 transfer_node: 254
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['251', '250', '204', '205', '206', '207', '208', '209', '210', '211', '240', '241', '242', '243', '254'] user: 2291205
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 238 time: 1900-01-01 09:07:00 transfer_node: 238
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['78', '77', '76', '43', '42', '41', '40', '39', '38', '238', '70', '69'] user: 1996357
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 55 time: 1900-01-01 09:06:56 transfer_node: 55
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['100', '101', '102', '103', '104', '105', '52', '51', '55', '253'] user: 430275
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 254 time: 1900-01-01 09:05:45 transfer_node: 254
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['247', '246', '245', '244', '243', '254'] user: 2371243
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 153 time: 1900-01-01 08:56:00 transfer_node: 153
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['153', '54', '37', '38', '238', '70', '69', '68'] user: 1848889
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 143 time: 1900-01-01 08:53:00 transfer_node: 143
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['143', '198', '197', '196', '20', '19', '18', '17', '16', '15', '14', '13', '75', '74'] user: 1689474
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 49 time: 1900-01-01 09:29:05 transfer_node: 49
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['95', '96', '97', '98', '99', '100', '101', '102', '103', '104', '105', '106', '107', '108', '140', '141', '49'] user: 583021
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 221 time: 1900-01-01 09:23:53 transfer_node: 221
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['231', '230', '81', '80', '79', '78', '77', '76', '43', '42', '41', '12', '11', '10', '9', '8', '221'] user: 2180828
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 254 time: 1900-01-01 08:55:00 transfer_node: 254
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['254', '243', '242', '241'] user: 354135
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 254 time: 1900-01-01 08:56:45 transfer_node: 254
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['244', '243', '254'] user: 2334022
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 254 time: 1900-01-01 08:59:45 transfer_node: 254
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['244', '243', '254'] user: 2393312
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 70 time: 1900-01-01 09:39:30 transfer_node: 70
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['89', '88', '87', '86', '85', '84', '83', '82', '81', '80', '79', '78', '77', '76', '43', '42', '41', '40', '39', '38', '70', '238', '239', '240', '211', '212', '213', '65', '64', '63'] user: 1642858
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 116 time: 1900-01-01 09:05:00 transfer_node: 116
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['123', '122', '121', '120', '119', '118', '117', '116', '234', '233', '232', '231', '230', '81', '82', '83', '84'] user: 1065849
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 196 time: 1900-01-01 08:55:00 transfer_node: 196
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['196', '20', '19', '18', '17', '110', '109', '108', '140', '139', '138', '137', '72', '71', '70', '69', '68', '67', '66'] user: 1978008
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 65 time: 1900-01-01 10:32:49 transfer_node: 65
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['195', '196', '20', '19', '18', '17', '110', '109', '108', '140', '139', '138', '137', '72', '71', '70', '38', '238', '239', '240', '211', '212', '213', '65'] user: 1717659
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 49 time: 1900-01-01 09:22:40 transfer_node: 49
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['37', '54', '153', '152', '151', '139', '140', '141', '49'] user: 216239
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 49 time: 1900-01-01 09:31:25 transfer_node: 49
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['150', '149', '148', '147', '146', '145', '144', '143', '142', '141', '49'] user: 786323
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 238 time: 1900-01-01 09:19:00 transfer_node: 238
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['204', '205', '102', '103', '104', '105', '52', '53', '54', '37', '38', '238', '70', '69', '68'] user: 1776193
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 164 time: 1900-01-01 09:03:00 transfer_node: 164
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['164', '246', '245', '244', '243', '254'] user: 2405507
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 70 time: 1900-01-01 09:57:00 transfer_node: 70
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['83', '82', '81', '80', '79', '78', '77', '76', '43', '42', '41', '40', '39', '38', '70', '238', '239', '240', '211', '212', '213', '65'] user: 1818985
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 254 time: 1900-01-01 09:00:00 transfer_node: 254
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['254', '243', '242', '241', '240', '239', '238'] user: 373305
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 76 time: 1900-01-01 09:06:00 transfer_node: 76
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['76', '43', '42', '41', '40', '39', '38', '238', '239', '240', '211', '212', '213', '65'] user: 1959868
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 256 time: 1900-01-01 09:06:00 transfer_node: 256
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['256', '168', '167', '166', '165', '164', '163', '162', '161', '160', '159', '158', '157'] user: 983765
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 262 time: 1900-01-01 08:57:00 transfer_node: 262
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['262', '176', '175', '174', '173', '172', '171', '170', '134', '135', '136', '39', '38', '37', '54', '53'] user: 820244
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 49 time: 1900-01-01 09:42:10 transfer_node: 49
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['94', '95', '96', '97', '98', '99', '100', '101', '102', '103', '104', '105', '106', '107', '108', '140', '141', '49'] user: 651847
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 254 time: 1900-01-01 09:52:50 transfer_node: 254
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['146', '145', '144', '143', '142', '141', '140', '139', '138', '137', '72', '71', '70', '238', '239', '240', '241', '242', '243', '254'] user: 2319999
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 49 time: 1900-01-01 09:09:40 transfer_node: 49
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['53', '52', '105', '106', '107', '108', '140', '141', '49'] user: 39898
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 254 time: 1900-01-01 09:09:00 transfer_node: 254
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['254', '243', '242', '241', '240', '239', '238', '70', '38', '37', '54', '53', '52', '51'] user: 67375
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 81 time: 1900-01-01 09:27:41 transfer_node: 81
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['118', '117', '234', '233', '232', '231', '230', '81'] user: 1635947
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 52 time: 1900-01-01 09:46:44 transfer_node: 52
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['81', '80', '79', '78', '77', '76', '43', '44', '45', '46', '111', '110', '109', '108', '107', '106', '105', '52'] user: 762225
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 164 time: 1900-01-01 09:11:00 transfer_node: 164
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['164', '246', '247', '97', '98', '99', '100', '101', '102', '103', '104', '105', '52', '51', '50'] user: 574109
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 170 time: 1900-01-01 10:10:10 transfer_node: 170
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['98', '99', '100', '101', '102', '103', '104', '105', '52', '53', '54', '37', '38', '39', '136', '135', '134', '170'] user: 1545928
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 254 time: 1900-01-01 09:16:50 transfer_node: 254
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['242', '243', '254'] user: 2405145
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 52 time: 1900-01-01 10:13:44 transfer_node: 52
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['36', '35', '34', '33', '32', '31', '30', '29', '28', '27', '26', '25', '24', '22', '21', '20', '19', '18', '17', '110', '109', '108', '107', '106', '105', '52'] user: 831761
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 117 time: 1900-01-01 09:32:15 transfer_node: 117
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['106', '107', '108', '109', '110', '111', '112', '113', '114', '115', '116', '117', '234', '235'] user: 2154119
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 65 time: 1900-01-01 09:40:19 transfer_node: 65
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['98', '99', '100', '282', '283', '284', '158', '157', '156', '207', '208', '209', '210', '211', '212', '213', '65'] user: 1675676
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 238 time: 1900-01-01 09:39:14 transfer_node: 238
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['197', '198', '143', '142', '141', '140', '139', '138', '137', '72', '71', '70', '238', '38'] user: 829414
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 102 time: 1900-01-01 09:07:00 transfer_node: 102
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['102', '205', '206', '207', '208', '209', '210', '211', '240', '241'] user: 317196
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 117 time: 1900-01-01 10:02:00 transfer_node: 117
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['215', '214', '213', '212', '211', '240', '239', '238', '70', '71', '72', '137', '138', '139', '140', '108', '109', '110', '111', '112', '113', '114', '115', '116', '117', '234'] user: 2261065
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 49 time: 1900-01-01 09:42:10 transfer_node: 49
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['37', '54', '153', '152', '151', '139', '140', '141', '49'] user: 718783
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 173 time: 1900-01-01 09:54:40 transfer_node: 173
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['321', '320', '319', '318', '317', '316', '315', '314', '313', '312', '311', '310', '309', '308', '173'] user: 1519179
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 254 time: 1900-01-01 09:34:50 transfer_node: 254
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['241', '242', '243', '254'] user: 2413016
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 254 time: 1900-01-01 09:26:00 transfer_node: 254
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['254', '243', '242', '241', '240', '239', '238', '70', '71', '72', '137', '138', '139', '140', '108', '109', '110', '111', '46'] user: 78683
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 12 time: 1900-01-01 09:34:00 transfer_node: 12
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['12', '41', '40', '39', '38', '37', '54', '153', '154', '155'] user: 949668
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 49 time: 1900-01-01 10:04:50 transfer_node: 49
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['94', '95', '96', '97', '98', '99', '100', '101', '102', '103', '104', '105', '106', '107', '108', '140', '141', '49'] user: 816353
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 221 time: 1900-01-01 10:07:38 transfer_node: 221
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['83', '82', '81', '80', '79', '78', '77', '76', '43', '42', '41', '12', '11', '10', '9', '8', '221'] user: 2194509
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 97 time: 1900-01-01 09:36:00 transfer_node: 97
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['97', '247', '246', '245', '244', '243', '254'] user: 2325743
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 221 time: 1900-01-01 09:48:25 transfer_node: 221
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['2', '3', '4', '5', '6', '7', '8', '221'] user: 2204438
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 54 time: 1900-01-01 09:32:00 transfer_node: 54
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['54', '153', '154', '155', '156', '157'] user: 865218
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 221 time: 1900-01-01 10:01:23 transfer_node: 221
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['231', '230', '81', '80', '79', '78', '77', '76', '43', '42', '41', '12', '11', '10', '9', '8', '221'] user: 2258352
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 97 time: 1900-01-01 09:36:00 transfer_node: 97
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['97', '247', '246', '164', '163', '162', '161'] user: 973735
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 230 time: 1900-01-01 10:24:48 transfer_node: 230
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['98', '99', '100', '101', '102', '103', '104', '105', '106', '107', '108', '109', '110', '111', '46', '45', '44', '43', '76', '77', '78', '79', '80', '81', '230'] user: 2249848
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 116 time: 1900-01-01 10:10:15 transfer_node: 116
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['126', '125', '124', '123', '122', '121', '120', '119', '118', '117', '116', '234', '233', '232', '231', '230', '81', '80'] user: 1692569
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 116 time: 1900-01-01 10:10:15 transfer_node: 116
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['126', '125', '124', '123', '122', '121', '120', '119', '118', '117', '116', '234', '235', '236', '237', '193', '194', '195', '196', '20', '21', '22', '23', '25', '26', '27', '28', '29', '30', '31'] user: 1180092
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 12 time: 1900-01-01 09:39:00 transfer_node: 12
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['12', '41', '40', '39', '38', '238', '239', '240', '241'] user: 279712
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 254 time: 1900-01-01 09:41:55 transfer_node: 254
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['244', '243', '254'] user: 2403043
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 207 time: 1900-01-01 09:42:00 transfer_node: 207
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['207', '156', '157', '158', '159', '160', '161', '162'] user: 838345
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 76 time: 1900-01-01 09:56:00 transfer_node: 76
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['76', '43', '44', '45'] user: 674771
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 221 time: 1900-01-01 10:16:25 transfer_node: 221
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['1', '2', '3', '4', '5', '6', '7', '8', '221'] user: 2292281
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 254 time: 1900-01-01 10:05:55 transfer_node: 254
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['245', '244', '243', '254'] user: 2331586
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 164 time: 1900-01-01 09:49:00 transfer_node: 164
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['164', '246', '245', '244', '243', '254'] user: 2355190
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 312 time: 1900-01-01 10:03:17 transfer_node: 312
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['110', '111', '46', '45', '44', '43', '76', '77', '312'] user: 1441747
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 116 time: 1900-01-01 10:10:15 transfer_node: 116
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['123', '122', '121', '120', '119', '118', '117', '116', '234', '235', '236', '237', '193', '194', '195', '196', '20', '21', '22', '23', '25', '26', '27', '28', '29', '30', '31', '32'] user: 1146018
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 68 time: 1900-01-01 10:29:25 transfer_node: 68
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['47', '46', '45', '44', '43', '42', '41', '40', '39', '136', '135', '134', '170', '169', '68'] user: 1737677
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 238 time: 1900-01-01 10:51:30 transfer_node: 238
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['38', '238', '70', '71', '72', '137', '138', '139', '140', '141', '49'] user: 633885
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 202 time: 1900-01-01 09:58:00 transfer_node: 202
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['202', '56', '55', '51', '50', '49', '48', '18', '17', '16', '15', '14', '13', '12', '11', '10', '9', '8', '221', '222'] user: 2215498
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 253 time: 1900-01-01 10:11:00 transfer_node: 253
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['253', '51', '50'] user: 34025
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 224 time: 1900-01-01 11:06:06 transfer_node: 234
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['191', '190', '189', '188', '187', '186', '185', '184', '183', '182', '181', '180', '179', '178', '177', '176', '262', '261', '224', '225', '226', '227', '228', '229', '230', '231', '232', '233', '234'] user: 2062653
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 52 time: 1900-01-01 10:15:00 transfer_node: 52
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['52', '105', '104', '103', '102', '101', '100', '99', '98', '97', '247', '246', '245'] user: 324564
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 151 time: 1900-01-01 10:13:00 transfer_node: 151
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['151', '139', '138', '137', '72', '73', '74', '75', '76', '77', '78'] user: 1761781
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 23 time: 1900-01-01 10:08:00 transfer_node: 23
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['23', '25', '24', '22', '21', '20', '19', '18', '48', '47', '46', '45', '44', '43'] user: 648428
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 250 time: 1900-01-01 10:09:00 transfer_node: 250
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['250', '204', '205', '102', '103', '104', '105', '52', '53', '54', '37', '38', '39', '136', '135', '134', '170', '171', '172', '173', '174', '175', '176'] user: 1536374
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 70 time: 1900-01-01 11:07:30 transfer_node: 70
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['259', '258', '257', '256', '255', '254', '243', '242', '241', '240', '239', '238', '70', '38'] user: 254311
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 55 time: 1900-01-01 11:12:20 transfer_node: 55
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['276', '275', '274', '273', '272', '271', '270', '269', '268', '249', '250', '251', '252', '253', '55', '51', '50', '49', '48', '47'] user: 239828
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 221 time: 1900-01-01 11:04:28 transfer_node: 221
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['231', '230', '81', '80', '79', '78', '77', '76', '43', '42', '41', '12', '11', '10', '9', '8', '221'] user: 2037457
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 55 time: 1900-01-01 11:22:50 transfer_node: 55
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['279', '278', '277', '276', '275', '274', '273', '272', '271', '270', '269', '268', '249', '250', '251', '252', '253', '55', '51', '50', '49', '48', '47', '46', '45', '44', '43', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90'] user: 1012107
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 18 time: 1900-01-01 10:27:00 transfer_node: 18
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['18', '48', '47', '46', '45', '44', '43', '76', '77', '78', '79', '80'] user: 1638276
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 70 time: 1900-01-01 11:23:00 transfer_node: 70
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['86', '85', '84', '83', '82', '81', '80', '79', '78', '77', '76', '43', '42', '41', '40', '39', '38', '70', '238', '239', '240', '241', '242'] user: 326960
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 254 time: 1900-01-01 10:42:00 transfer_node: 254
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['254', '243', '242', '241', '240', '239', '238', '70', '38', '39', '40', '41', '42', '43', '76', '77', '78', '79'] user: 1741207
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 170 time: 1900-01-01 11:52:10 transfer_node: 181
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['290', '291', '269', '268', '249', '250', '204', '205', '102', '103', '104', '105', '52', '53', '54', '37', '38', '39', '136', '135', '134', '170', '171', '172', '173', '174', '175', '176', '177', '178', '179', '180', '181', '182', '183', '184', '185', '186'] user: 1310708
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 70 time: 1900-01-01 11:23:00 transfer_node: 70
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['88', '87', '86', '85', '84', '83', '82', '81', '80', '79', '78', '77', '76', '43', '42', '41', '40', '39', '38', '70', '238', '239', '240', '241', '242'] user: 279895
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 195 time: 1900-01-01 10:54:00 transfer_node: 195
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['195', '319', '318', '317', '316', '112', '111', '46', '45'] user: 704217
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 65 time: 1900-01-01 11:22:44 transfer_node: 65
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['98', '99', '100', '282', '283', '284', '158', '157', '156', '207', '208', '209', '210', '211', '212', '213', '65'] user: 1664801
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 76 time: 1900-01-01 11:52:01 transfer_node: 87
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['245', '244', '243', '242', '241', '240', '239', '238', '38', '39', '40', '41', '42', '43', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87'] user: 1083536
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 238 time: 1900-01-01 11:33:44 transfer_node: 238
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['150', '149', '148', '147', '146', '145', '144', '143', '142', '141', '140', '139', '138', '137', '72', '71', '70', '238', '38'] user: 215862
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 38 time: 1900-01-01 11:25:04 transfer_node: 38
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['195', '196', '20', '19', '18', '17', '110', '109', '108', '140', '139', '138', '137', '72', '71', '70', '38', '238'] user: 384058
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 308 time: 1900-01-01 11:56:55 transfer_node: 312
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['190', '189', '188', '187', '186', '185', '184', '183', '182', '181', '180', '179', '178', '177', '176', '175', '174', '173', '308', '309', '310', '311', '312', '77', '76', '43', '44', '45', '46', '47'] user: 708245
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 55 time: 1900-01-01 11:22:12 transfer_node: 55
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['114', '113', '112', '111', '46', '47', '48', '49', '50', '51', '55', '253', '252', '251', '250', '249', '268', '269', '270', '271', '272', '273', '274', '275', '276', '277', '278', '279', '280'] user: 92119
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 221 time: 1900-01-01 11:02:00 transfer_node: 221
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['221', '8', '9', '10', '11', '12', '41', '42', '43', '44', '45', '46', '111', '112', '316', '317', '318', '319', '195', '194', '193', '237'] user: 2243720
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 18 time: 1900-01-01 10:58:00 transfer_node: 18
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['18', '48', '49', '50', '51'] user: 697308
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 213 time: 1900-01-01 10:59:00 transfer_node: 213
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['213', '65'] user: 1993614
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 262 time: 1900-01-01 10:57:00 transfer_node: 262
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['262', '176', '177', '178', '179', '180', '181', '182', '183', '184', '185'] user: 1277365
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 76 time: 1900-01-01 11:52:01 transfer_node: 89
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['300', '150', '149', '148', '147', '146', '145', '144', '143', '198', '197', '196', '20', '19', '18', '48', '47', '46', '45', '44', '43', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89'] user: 1010429
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 55 time: 1900-01-01 11:36:12 transfer_node: 55
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['173', '172', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '48', '49', '50', '51', '55', '253', '252'] user: 335063
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 70 time: 1900-01-01 11:54:30 transfer_node: 70
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['87', '86', '85', '84', '83', '82', '81', '80', '79', '78', '77', '76', '43', '42', '41', '40', '39', '38', '70', '238', '239', '240', '241'] user: 253096
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 234 time: 1900-01-01 11:27:15 transfer_node: 234
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['118', '117', '234', '116', '115', '114', '113', '112', '111', '46', '45', '44', '43', '42', '41', '12', '11', '10', '9', '8', '221', '220'] user: 2069922
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 70 time: 1900-01-01 11:48:05 transfer_node: 70
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['61', '62', '63', '64', '65', '213', '212', '211', '240', '239', '238', '70', '38', '39', '40', '41', '42', '43', '76', '77', '78', '79'] user: 1811155
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 38 time: 1900-01-01 11:57:44 transfer_node: 38
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['193', '194', '195', '196', '20', '19', '18', '17', '110', '109', '108', '140', '139', '138', '137', '72', '71', '70', '38', '238'] user: 414912
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 54 time: 1900-01-01 11:49:39 transfer_node: 39
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['161', '160', '159', '158', '157', '156', '155', '154', '153', '54', '37', '38', '39', '136', '135', '134', '170', '171', '172', '173', '174', '175', '223', '224', '225', '226', '227'] user: 2276323
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 243 time: 1900-01-01 11:45:50 transfer_node: 241
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['258', '257', '256', '255', '254', '243', '242', '241'] user: 301738
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 232 time: 1900-01-01 11:22:00 transfer_node: 224
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['232', '231', '230', '229', '228', '227', '226', '225', '224', '261', '262', '176', '177', '178', '179'] user: 1513394
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 202 time: 1900-01-01 11:19:00 transfer_node: 202
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['202', '56', '55', '51', '50', '49', '48', '47', '46', '45', '44', '43', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90'] user: 1026284
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 172 time: 1900-01-01 11:26:35 transfer_node: 172
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['6', '7', '8', '9', '172'] user: 1563539
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 70 time: 1900-01-01 11:48:05 transfer_node: 70
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['64', '65', '213', '212', '211', '240', '239', '238', '70', '38', '39', '40', '41', '42', '43', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88'] user: 1122319
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 39 time: 1900-01-01 11:49:55 transfer_node: 43
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['67', '68', '169', '170', '134', '135', '136', '39', '40', '41', '42', '43', '76', '77', '78', '79', '80', '81', '82', '83', '84'] user: 1033448
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 102 time: 1900-01-01 11:50:59 transfer_node: 97
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['199', '200', '201', '202', '203', '204', '205', '102', '101', '100', '99', '98', '97', '247', '246', '164', '165', '166', '167', '168', '256'] user: 2398876
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 89 time: 1900-01-01 11:36:00 transfer_node: 76
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['89', '88', '87', '86', '85', '84', '83', '82', '81', '80', '79', '78', '77', '76', '43', '44', '45', '46', '47'] user: 567809
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 319 time: 1900-01-01 11:41:47 transfer_node: 308
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['237', '193', '194', '195', '319', '318', '317', '316', '315', '314', '313', '312', '311', '310', '309', '308', '173'] user: 1503246
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 38 time: 1900-01-01 11:32:00 transfer_node: 38
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['38', '238', '239', '240', '241', '242', '243', '254'] user: 2383940
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 49 time: 1900-01-01 11:56:25 transfer_node: 50
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['150', '149', '148', '147', '146', '145', '144', '143', '142', '141', '49', '50'] user: 224069
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 52 time: 1900-01-01 11:48:46 transfer_node: 40
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['248', '249', '250', '204', '205', '102', '103', '104', '105', '52', '53', '54', '37', '38', '39', '40'] user: 782199
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 93 time: 1900-01-01 11:44:00 transfer_node: 82
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['93', '92', '91', '90', '89', '88', '87', '86', '85', '84', '83', '82'] user: 1975899
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 125 time: 1900-01-01 11:40:00 transfer_node: 117
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['125', '124', '123', '122', '121', '120', '119', '118', '117', '234', '116', '115', '114', '113', '112', '111', '110', '109', '108', '140', '139', '138', '137', '72', '71', '70', '69'] user: 1948194
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 274 time: 1900-01-01 11:40:00 transfer_node: 268
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['274', '273', '272', '271', '270', '269', '268'] user: 139940
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 6 time: 1900-01-01 11:43:00 transfer_node: 18
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '48', '49', '50'] user: 570154
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 191 time: 1900-01-01 11:41:00 transfer_node: 182
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['191', '190', '189', '188', '187', '186', '185', '184', '183', '182', '181', '180', '179', '178', '177', '176', '175'] user: 1608672
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 94 time: 1900-01-01 11:44:00 transfer_node: 105
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['94', '95', '96', '97', '98', '99', '100', '101', '102', '103', '104', '105', '52', '53'] user: 61488
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 50 time: 1900-01-01 11:48:00 transfer_node: 37
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['50', '51', '52', '53', '54', '37'] user: 218267
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 8 time: 1900-01-01 11:59:22 transfer_node: 12
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['220', '221', '8', '9', '10', '11', '12', '41', '42', '43', '76', '77', '78', '79', '80', '81', '230', '231', '232'] user: 2292691
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 2 time: 1900-01-01 11:48:00 transfer_node: 8
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['2', '3', '4', '5', '6', '7', '8', '221', '220', '219', '218', '217'] user: 2080719
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 316 time: 1900-01-01 11:53:00 transfer_node: 308
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['316', '315', '314', '313', '312', '311', '310', '309', '308', '173'] user: 1477105
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 69 time: 1900-01-01 11:52:00 transfer_node: 75
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['69', '70', '71', '72', '73', '74', '75'] user: 1857164
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 22 time: 1900-01-01 11:51:00 transfer_node: 17
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['22', '21', '20', '19', '18', '17', '110', '109', '108', '140', '139', '138', '137', '72', '71', '70', '38', '238', '239', '240', '241', '242'] user: 526804
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 45 time: 1900-01-01 11:55:00 transfer_node: 51
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['45', '46', '47', '48', '49', '50', '51', '55', '253'] user: 428685
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 84 time: 1900-01-01 11:56:00 transfer_node: 77
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['84', '83', '82', '81', '80', '79', '78', '77'] user: 2028712
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 152 time: 1900-01-01 11:54:00 transfer_node: 161
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['152', '153', '154', '155', '156', '157', '158', '159', '160', '161'] user: 922456
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 46 time: 1900-01-01 11:47:00 transfer_node: 40
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['46', '45', '44', '43', '42', '41', '40'] user: 757917
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 255 time: 1900-01-01 11:51:00 transfer_node: 258
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['255', '256', '257', '258'] user: 2319803
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 147 time: 1900-01-01 11:58:00 transfer_node: 137
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['147', '146', '145', '144', '143', '142', '141', '140', '139', '138', '137', '72', '71', '70', '69', '68', '67'] user: 1922775
+[2019-06-06 10:55:54] WARNING [get_planed_path_time_info: Solution2.py, 1111] Cannot get valid train for planed path. node: 104 time: 1900-01-01 11:57:00 transfer_node: 105
+[2019-06-06 10:55:54] WARNING [plan_user_path: Solution2.py, 858] Cannot get train info for path: ['104', '105', '52', '53', '54', '37', '38', '238', '70', '69', '68', '67'] user: 1962831
+[2019-06-06 10:55:54] INFO [plan_user_path: Solution2.py, 881] User path planning passed: ['1722986', '906378', '2101866', '2343095', '2068963', '1781695', '2059343', '2216129', '209586', '1523164', '1754864', '1873546', '544003', '2213042', '400827', '505904', '1774696', '191706', '117797', '575392', '1357806', '431970', '206878', '478682', '2366302', '143931', '172082', '2040611', '417966', '1444795', '279394', '597830', '829375', '610180', '2238046', '170136', '389600', '476514', '1432643', '922510', '645345', '2404671', '623779', '1381688', '1405080', '1739944', '1940363', '2408036', '1400984', '1699267', '1543444', '2261247', '199031', '2053731', '84075', '4440', '217097', '542951', '680624', '1765317', '465608', '262113', '245313', '700983', '620801', '1669036', '1373379', '267290', '2056548', '2084393', '478619', '2289366', '803675', '2271689', '1565417', '1740484', '1893239', '1449111', '1091914', '2403199', '682727', '2395081', '1721692', '322476', '1588922', '1403042', '322265', '640289', '287268', '612103', '1925665', '2235137', '1936642', '2333272', '750072', '56618', '1762747', '778886', '391585', '1949050', '2378255', '1623280', '444933', '2318950', '842394', '2063684', '1726278', '2342046', '1845383', '504126', '223522', '588020', '423469', '1710733', '461729', '2201490', '174839', '507271', '1689292', '73002', '1902312', '1726639', '719875', '2012331', '1957282', '662960', '2426427', '1599330', '1077819', '1768158', '342547', '218339', '2314897', '1563009', '662848', '478288', '336377', '2418639', '332326', '1624277', '4465', '1985890', '1933288', '2407251', '1939005', '712727', '1586429', '993630', '647851', '382520', '318489', '591141', '1832133', '504189', '1591728', '1588605', '1593234', '1863619', '2225674', '407532', '2009539', '1640808', '2321005', '610233', '2055253', '1223673', '1534665', '2107084', '81753', '855522', '801221', '2394710', '461461', '800050', '393505', '544518', '342133', '482589', '791340', '817038', '309226', '231571', '2025871', '1084602', '644788', '2340607', '441726', '718176', '694449', '1980772', '91647', '2291205', '1996357', '430275', '2371243', '1848889', '1689474', '583021', '2180828', '354135', '2334022', '2393312', '1642858', '1065849', '1978008', '1717659', '216239', '786323', '1776193', '2405507', '1818985', '373305', '1959868', '983765', '820244', '651847', '2319999', '39898', '67375', '1635947', '762225', '574109', '1545928', '2405145', '831761', '2154119', '1675676', '829414', '317196', '2261065', '718783', '1519179', '2413016', '78683', '949668', '816353', '2194509', '2325743', '2204438', '865218', '2258352', '973735', '2249848', '1692569', '1180092', '279712', '2403043', '838345', '674771', '2292281', '2331586', '2355190', '1441747', '1146018', '1737677', '633885', '2215498', '34025', '2062653', '324564', '1761781', '648428', '1536374', '254311', '239828', '2037457', '1012107', '1638276', '326960', '1741207', '1310708', '279895', '704217', '1664801', '1083536', '215862', '384058', '708245', '92119', '2243720', '697308', '1993614', '1277365', '1010429', '335063', '253096', '2069922', '1811155', '414912', '2276323', '301738', '1513394', '1026284', '1563539', '1122319', '1033448', '2398876', '567809', '1503246', '2383940', '224069', '782199', '1975899', '1948194', '139940', '570154', '1608672', '61488', '218267', '2292691', '2080719', '1477105', '1857164', '526804', '428685', '2028712', '922456', '757917', '2319803', '1922775', '1962831']
+[2019-06-06 10:55:54] INFO [plan_user_path: Solution2.py, 882] User path planning passed 31.04% user
+[2019-06-06 10:55:54] INFO [<module>: main.py, 40] Everything is Done

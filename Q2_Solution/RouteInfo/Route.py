@@ -52,9 +52,6 @@ class Route(object):
         self.transfer_node_dict[node_id].add(transfer_node_id)
         self.node_visited_dict[node_id] = False
 
-    def with_both_node(self, node1, node2):
-        return node1 in self.node_set and node2 in self.node_set
-
     def has_node(self, node):
         return node in self.node_set
 
@@ -113,23 +110,6 @@ class Route(object):
     def get_train_points_info(self, train_number):
         return self.train_points_dict[train_number]
 
-    def is_in_same_train(self, end_node_id, end_time, start_node_id, start_time):
-        for train_number, train_arrival_time, _ in self.node_train_info_dict[end_node_id]:
-            # 该车次到达终点的时刻要小于等于终止时刻
-            if train_arrival_time > end_time:
-                continue
-
-            # 起始时刻要小于等于该车次的起始点发车时刻
-            if start_node_id in self.train_number_dict[train_number] and \
-                    start_time <= self.train_number_dict[train_number][start_node_id][1]:
-                # 找到两个顶点在同一车次的列车车次
-                return train_number
-
-        return None
-
-    def get_transfer_info(self):
-        return self.transfer_node_dict
-
     def get_node_k_nearest_train(self, node_id, date_time, k):
         result = list()
         for train_number, train_arrival_time, _ in self.node_train_info_dict[node_id]:
@@ -139,10 +119,30 @@ class Route(object):
                     return result
         return result
 
-    def get_latest_arrival_time(self, transfer_node, end_time):
-        for train_number, train_arrival_time, dispatch_time in self.node_train_info_dict[transfer_node].items():
-            if train_arrival_time < end_time:
-                return train_number, train_arrival_time
+    def get_train_node_earliest_arrival_time(self, start_node_id, start_time, end_node_id):
+        """
+        获得符合 start_node -> end_node 最早的列车中， end_node 的到达时间
+        :param start_node_id: 起始点
+        :param start_time: start_node 的时间
+        :param end_node_id: 终止点
+        :return: 终止点的到达时间
+        """
+        for train_number, arrival_time, dispatch_time in self.node_train_info_dict[start_node_id]:
+            # 可能在该节点等一段时间
+            if arrival_time <= start_time < dispatch_time:
+                if end_node_id in self.train_number_dict[train_number]:
+                    end_node_arrival_time, _ = self.train_number_dict[train_number][end_node_id]
+                    if arrival_time >= end_node_arrival_time:
+                        continue
+                    return end_node_arrival_time
+
+        node_train_list = list(reversed(self.node_train_info_dict[start_node_id]))
+        for train_number, arrival_time, dispatch_time in node_train_list:
+            if end_node_id in self.train_number_dict[train_number]:
+                end_node_arrival_time, _ = self.train_number_dict[train_number][end_node_id]
+                if start_time >= dispatch_time or arrival_time >= end_node_arrival_time :
+                    continue
+                return end_node_arrival_time
 
         return None
 
@@ -158,14 +158,11 @@ class Route(object):
 
         return self.train_number_dict[train_number][node_id][0]
 
-    def get_node_time_in_train(self, node_id, train_number):
+    def get_time_info_in_train(self, node_id, train_number):
         if node_id not in self.train_number_dict[train_number]:
             return None
 
         return self.train_number_dict[train_number][node_id]
-
-    def get_after_transfer_node_id(self, transfer_node_id):
-        return self.transfer_node_dict[transfer_node_id]
 
     def get_train_info_dict(self):
         return self.train_number_dict
@@ -182,7 +179,6 @@ class Route(object):
         return self.node_visited_dict[node_id]
 
     def get_node_train(self):
-
         return self.node_train_info_dict
 
     def get_total_train_number(self):
@@ -193,15 +189,6 @@ class Route(object):
 
     def get_transfer_node_number(self):
         return len(self.transfer_node_dict)
-
-    def increase_traffic_value(self, traffic_delta=1):
-        self.traffic_value += traffic_delta
-
-    def get_traffic_value(self):
-        return self.traffic_value
-
-    def get_node_set(self):
-        return self.node_set
 
     def get_train_node_dispatch_time(self, train_number, node_id):
         return self.train_number_dict[train_number][node_id][1]
