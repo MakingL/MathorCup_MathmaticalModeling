@@ -97,8 +97,6 @@ class CLDataPerprocessor(object):
                 passenger['endTime']))
                 result_file.write("\n")
 
-    
-
 if __name__ == "__main__":
     data_path_passenger = sys.argv[1]
     data_path_timeTable = sys.argv[2]

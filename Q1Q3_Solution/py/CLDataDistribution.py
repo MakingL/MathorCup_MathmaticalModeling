@@ -80,9 +80,6 @@ class CLDataDistributer(object):
         print("出行时段:{}".format(x_period))
         pass
     
-    def distribute_distance(self):
-        pass
-
     def distribute_duration(self):
         #出行时长
         durationList = list()
@@ -99,7 +96,7 @@ class CLDataDistributer(object):
         print("出行时长:{}".format(x_duration))
         pass
 
-    #todo 八通线 筛选出出发站或者结束站在八通线的乘客/计算各项分布
+    #八通线 筛选出出发站或者结束站在八通线的乘客/计算各项分布
     def distribute_period_8tong(self):
         x_period = [0 for n in range(24)]
         #x_period = list()
