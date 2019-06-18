@@ -1,4 +1,7 @@
-# MathorCup2019
+# MathorCup2019 - A Solution
+![](https://img.shields.io/badge/MathorCup-2019-lightgrey.svg)
+![](https://img.shields.io/badge/python-3.6%20%7C%203.7-blue.svg)
+
 - 仓库为 2019 年第九届 MathorCup 高校数学建模挑战赛 A 题的解答代码
 - 很菜，摸了个三等
 - 👉[比赛官网](http://www.mathorcup.org/)
