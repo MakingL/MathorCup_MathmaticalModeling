@@ -10,6 +10,6 @@
 
 ## 解答
 由于代码是两个同学分开写的，所以解题说明及代码运行说明分别放在了各个目录下：
-- [问题 1 解答](./Q1Q3_Solution/README_Q1Q3Solution.md)
-- [问题 2 解答](./Q2_Solution/README_Q2Solution.md)
-- [问题 3 解答](./Q1Q3_Solution/README_Q1Q3Solution.md)
+- [问题 1 解答](./Q1Q3_Solution)
+- [问题 2 解答](./Q2_Solution)
+- [问题 3 解答](./Q1Q3_Solution)

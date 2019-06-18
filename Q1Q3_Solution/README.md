@@ -1,5 +1,6 @@
 # 问题1解答
 &emsp; 问题1要求分析基于以上数据的乘客出行特征，包括出行时段分布、出行距离分布、 出行时长分布。
+
 &emsp; 首先使用 CLDayaPreprocessor.py 进行数据预处理。删除以下异常数据：
 - 出发站点与到达站点相同的乘客
 - 进站时间晚于出站时间的乘客
@@ -25,7 +26,7 @@
 ## 环境说明
 - 代码使用 Visual Studio Code(1.32.3) 编写
 - 所有代码使用 python3 编写
-- 可在 macOS 或 Linux 环境下运行
+- 可在 python3.7 环境下运行
 
 ## 代码文件说明
 - CLDataPreprocessor.py
