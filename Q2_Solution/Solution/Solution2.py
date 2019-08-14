@@ -1174,7 +1174,7 @@ if __name__ == '__main__':
                          node_data_path="../data/data2_nodeInfo.txt",
                          train_data_path="../data/data3_trainInfo.txt",
                          road_distance_data_path="../data/data2_distance_between_two_station.txt",
-                         answer_2A_file_path="../data/user_path_answer.txt",
+                         answer_2A_file_path="../data/user_path_answer_2A.txt",
                          user_planed_path_file_path="../data/planed_user_path.txt",
                          user_path_len_file_path="../data/user_path_len.txt",
                          route_traffic_file_path="../data/route_traffic.txt",
@@ -1186,12 +1186,12 @@ if __name__ == '__main__':
     logging.info("load data done")
 
     # ===== 2-A 答案求解======
-    # user_list = ["2", "7", "19", "31", "41", "71",
-    #              "83", "89", "101", "113", "2845", "124801",
-    #              "140610", "164834", "193196", "223919",
-    #              "275403", "286898", "314976", "315621"
-    #              ]
-    # @TODO: 45 号用户的行程数据推导不出：
+    user_list = ["2", "7", "19", "31", "41", "71",
+                 "83", "89", "101", "113", "2845", "124801",
+                 "140610", "164834", "193196", "223919",
+                 "275403", "286898", "314976", "315621"
+                 ]
+    # 45 号用户的行程数据推导不出：
     # -------------------------
     #   45,12,37,10:49:00,11:05:06
     #   查地图：
@@ -1201,22 +1201,45 @@ if __name__ == '__main__':
     #       【乘车方案】复兴门－积水潭：2号线（复兴门－积水潭，4站），预计时间约12分钟，票价3元。
     #   行车数据并无相关的线路
     # user_list = ["45"]
-    user_list = ["1910787"]
+    # user_list = ["1910787"]
     # -------------------------
     logging.info("user id list is: {}".format(user_list))
 
     for userId in user_list:
         # 求解每个用户的路径数据
         solution.get_and_save_user_path(userId)
-    # ===== 2-A =======
+    # ===== 2-A END =======
 
-    # sampled_user_list = solution.sample_user_batch(user_sample_freq=1000000)
-    #
-    # # 统计用户出行线路长度及线路流量，
-    # passed_user_set = solution.get_user_path_len_and_route_traffic(sampled_user_list)
-    # sampled_user_list = list(set(sampled_user_list) - passed_user_set)
-    #
-    # # 为乘客规划线路
-    # solution.plan_user_path(sampled_user_list)
+    # ======= 2-B =========
+    # 构建问题求解对象，更改 user_path_answer 文件，避免覆盖掉 user_path_answer_2A 中的结果
+    solution = Solution2(user_data_path="../data/data1_O2D.txt",
+                         node_data_path="../data/data2_nodeInfo.txt",
+                         train_data_path="../data/data3_trainInfo.txt",
+                         road_distance_data_path="../data/data2_distance_between_two_station.txt",
+                         answer_2A_file_path="../data/user_path_answer.txt",
+                         user_planed_path_file_path="../data/planed_user_path.txt",
+                         user_path_len_file_path="../data/user_path_len.txt",
+                         route_traffic_file_path="../data/route_traffic.txt",
+                         planed_route_traffic_file_path="../data/planed_route_traffic.txt",
+                         passed_user_file_path="../data/passed_user.txt",
+                         route_data_path="../data/data2_routeInfo.txt")
+    # 导入数据
+    solution.load_data()
+    logging.info("load data done")
+
+    # 按比例 user_sample_freq= 1000000:1 采样用户数据，若采用所有数据，一般主机下需要跑几天
+    sampled_user_list = solution.sample_user_batch(user_sample_freq=1000000)
+
+    # 统计用户出行线路长度及线路流量
+    passed_user_set = solution.get_user_path_len_and_route_traffic(sampled_user_list)
+    sampled_user_list = list(set(sampled_user_list) - passed_user_set)
+    logging.info("passed user size: {} planing user list size: {}".format(len(passed_user_set),
+                                                                          len(sampled_user_list)))
+    sampled_user_list = list(set(sampled_user_list) - passed_user_set)
+    logging.info("passed user size: {} planing user list size: {}".format(len(passed_user_set),
+                                                                          len(sampled_user_list)))
+    # 为乘客规划线路, 并将规划结果保存到相应的文件 planed_user_path.txt 中
+    solution.plan_user_path(sampled_user_list)
+    # ======= 2-B END=========
 
     logging.info("Everything is Done")
